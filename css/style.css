@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Larsseil-light";
+  src: url(../fonts/Larsseit-Light.woff2);
+}
+
+@font-face {
+  font-family: "Larsseil-Regular";
+  src: url(../fonts/Larsseit.woff2);
+}
+
+@font-face {
+  font-family: "Larsseil-Medium";
+  src: url(../fonts/Larsseit-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Larsseil-Bold";
+  src: url(../fonts/Larsseit-Bold.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Larsseil-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+h1 {
+  font-family: "Larsseil-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-family: "Larsseil-Bold", sans-serif;
+  font-size: 36px;
+  letter-spacing: -0.006em;
+  line-height: 27px;
+}
+
+h3 {
+  font-family: "Larsseil-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+}
+
+h4 {
+  font-family: "Larsseil-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.006em;
+}
+
+h5 {
+  font-family: "Larsseil-Regular", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 23px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1010px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 500px;
+    padding: 40px;
+  }
+}

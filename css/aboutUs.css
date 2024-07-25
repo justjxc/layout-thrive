@@ -1,0 +1,45 @@
+.aboutUs {
+  padding-top: 150px;
+}
+
+.aboutUs .container {
+  max-width: 1270px;
+  display: flex;
+  gap: 225px;
+}
+
+.aboutUs-title {
+  text-transform: uppercase;
+  color: #22356f;
+}
+
+.aboutUs .paragraph {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #22356f;
+  max-width: 620px;
+}
+
+@media (max-width: 768px) {
+  .aboutUs {
+    padding-top: 50px;
+  }
+
+  .aboutUs .container {
+    flex-direction: column;
+    max-width: 600px;
+    gap: 100px;
+  }
+
+  .aboutUs .paragraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs .container {
+    max-width: 500px;
+  }
+}

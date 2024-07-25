@@ -1,0 +1,136 @@
+.moreinfo {
+  width: 100%;
+  height: 800px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  background-image: url("../img/moreinfo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.moreinfo .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moreinfo-content {
+  width: 676px;
+}
+
+.moreinfo-title {
+  color: #22356f;
+}
+
+.moreinfo-paragraph {
+  font-family: "Larsseil-Bold", sans-serif;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+  color: #22356f;
+  margin-top: 225px;
+}
+
+.moreinfo-link {
+  color: #6cd3e1;
+  text-decoration: none;
+}
+
+.moreinfo-btn {
+  text-decoration: none;
+  font-family: "Larsseil-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #f9b640;
+  text-transform: uppercase;
+  margin-top: 152px;
+  width: fit-content;
+  display: block;
+  transition: 0.3s;
+  position: relative;
+}
+
+.moreinfo-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 100%;
+  height: 2px;
+  background: #f9b640;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.moreinfo-btn:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.moreinfo-btn:active,
+.moreinfo-btn:visited {
+  color: #f9b640;
+}
+
+.moreinfo-btn:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 1300px) {
+  .moreinfo {
+    height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .moreinfo-content {
+    max-width: 500px;
+  }
+
+  .moreinfo .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .moreinfo {
+    background-image: url(../img/moreinfo-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+  }
+  .moreinfo-title {
+    color: #eee;
+  }
+  .moreinfo-paragraph {
+    color: #eee;
+  }
+
+  .moreinfo-btn {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .moreinfo {
+    padding-top: 20px;
+  }
+
+  .moreinfo-title {
+    font-size: 14px;
+  }
+
+  .moreinfo-paragraph {
+    font-size: 20px;
+    margin-top: 125px;
+  }
+
+  .moreinfo-btn {
+    margin-top: 100px;
+  }
+}

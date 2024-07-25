@@ -1,0 +1,51 @@
+.plans {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.plans .container {
+  max-width: 1440px;
+}
+
+.plans-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.plans-list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 105px;
+}
+
+.plans-list-item-title {
+  letter-spacing: 1px;
+  color: #22356f;
+}
+
+.plans-list-item-descr {
+  margin-top: 28px;
+  color: rgba(34, 53, 111, 0.5);
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 1010px) {
+  .plans .plans-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plans .plans-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .plans .plans-list-item {
+    padding: 20px 40px;
+  }
+}

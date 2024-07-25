@@ -1,0 +1,46 @@
+.whyUs {
+  color: #fff;
+  background-color: #62d0df;
+  background-image: url(../img/whyUs-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: 151px 0 95px 0;
+}
+
+.whyUs-content {
+  max-width: 640px;
+}
+
+.whyUs-paragraph {
+  margin-top: 75px;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.whyUs .bigger-text {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+@media (max-width: 1280px) {
+  .whyUs .whyUs-content {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .whyUs {
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+  }
+
+  .whyUs .whyUs-content {
+    max-width: fit-content;
+  }
+}
